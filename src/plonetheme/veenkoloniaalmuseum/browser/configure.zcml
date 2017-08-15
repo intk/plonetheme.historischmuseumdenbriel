@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="plonetheme.modernbase">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="plonetheme.modernbase.interfaces.IPlonethemeModernBaseLayer"
+      />
+
+  <!-- Publish static files -->
+  <browser:resourceDirectory
+      name="plonetheme.modernbase"
+      directory="static"
+      />
+
+  <browser:page
+        name="online_experience"
+        for="*"
+        template="templates/online_experience.pt"
+        class=".views.OnlineExperienceView"
+        permission="zope2.View"
+        />
+
+  <browser:page
+        name="context_tools"
+        for="*"
+        class=".views.ContextToolsView"
+        permission="zope2.View"
+        />
+
+  <browser:menuItem
+        for="*"
+        menu="plone_displayviews"
+        title="Online experience view"
+        action="@@online_experience"
+        description="Shows the online experience view"
+        />
+
+</configure>
