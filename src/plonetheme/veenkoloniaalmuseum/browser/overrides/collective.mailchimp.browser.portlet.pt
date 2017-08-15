@@ -6,7 +6,7 @@
       tal:omit-tag="">
 
   <dl tal:attributes="class string:portlet portletMailChimp portletMailChimp-${view/name}">
-    <tal:site_check tal:condition="python: 'markiezenhof' in context.absolute_url()" tal:on-error="nothing">
+    <tal:site_check tal:condition="python: 'veenkoloniaalmuseum' in context.absolute_url()" tal:on-error="nothing">
       <div class="email-left-background"></div>
       <div class="email-right-background"></div>
     </tal:site_check>

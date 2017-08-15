@@ -5,7 +5,7 @@
  An installable theme for Plone 5
 ------------------------------
 
-`Latest version on PyPI <https://pypi.python.org/pypi/plonetheme.modernbase>`_
+`Latest version on PyPI <https://pypi.python.org/pypi/plonetheme.veenkoloniaalmuseum>`_
 
 Documentation
 =============
@@ -13,14 +13,14 @@ Documentation
 
 Installation
 ============================
-Install plonetheme.modernbase by adding it to your buildout::
+Install plonetheme.veenkoloniaalmuseum by adding it to your buildout::
 
     [buildout]
 
     ...
 
     eggs =
-        plonetheme.modernbase
+        plonetheme.veenkoloniaalmuseum
 
 and then running ``bin/buildout``
 
@@ -28,8 +28,8 @@ Source Code and Contribution
 ============================
 
 Source-Code
-    at the `Plone code repository hosted at Github <https://github.com/intk/plonetheme.modernbase>`_.
+    at the `Plone code repository hosted at Github <https://github.com/intk/plonetheme.veenkoloniaalmuseum>`_.
 
 Issues
-    Please use the `Issue-Tracker <https://github.com/intk/plonetheme.modernbase/issues>`_
+    Please use the `Issue-Tracker <https://github.com/intk/plonetheme.veenkoloniaalmuseum/issues>`_
 

@@ -831,11 +831,15 @@ abbr {
 }
 
 .logo-nav-wrapper {
-	width: 35%;
+
     margin: 0 auto;
 
     @media (max-width: 768px) {
     	width: auto;
+    }
+
+    @media (min-width: 992px) {
+    	padding-right: 90px;
     }
 }
 
@@ -868,7 +872,7 @@ body:not(.frontend) {
 	letter-spacing: 0.05em;
 	width: auto;
 	font-size: 20px;
-	background-color: #008da9;
+	background-color: #583a1b;
 	letter-spacing: 0.15em;
 	text-shadow: 0px 0px 0px #ffffff;
 	
@@ -926,7 +930,7 @@ body:not(.frontend) {
 
 .documentLayout() {
 	h1 {
-		color: #df0934;
+		color: #583a1b;
 		.introBold();
 	}
 
@@ -1011,9 +1015,9 @@ body:not(.frontend) {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 350px;
+	width: 90px;
 	height: auto;
-	background-color: #df0934;
+	background-color: #583a1b;
 	cursor: pointer;
 	z-index: 2;
 
@@ -1027,14 +1031,6 @@ body:not(.frontend) {
 	@media (max-width: 768px) {
 		width: 70px;
 		height: 70px;
-		img {
-			content: url('++resource++plonetheme.modernbase/logo-glyph.svg') !important;
-			height: 70px;
-		}
-
-		img:before {
-			content: url('++resource++plonetheme.modernbase/logo-glyph.svg') !important;
-		}
 	}
 }
 
@@ -1117,8 +1113,8 @@ body.frontend, body#tinymce {
 	}
 
 	.pager li.active span {
-		background-color: #0085a1;
-		border: 1px solid #0085a1 !important;
+		background-color: #583a1b;
+		border: 1px solid #583a1b !important;
 	}
 
 	.pagination {
@@ -1237,13 +1233,13 @@ body.frontend, body#tinymce {
     	}
 
     	h1 {
-    		color: #df0934;
+    		color: #583a1b;
     		margin-bottom: 30px;
     		.introBold();
     	}
 
     	.subheading {
-    		color: #ea5d79;
+    		color: #583a1b;
     		font-size: 24px;
     		.introLight();
     	}
@@ -1559,7 +1555,7 @@ body.frontend, body#tinymce {
 
 		h1 {
 			font-size: 42px;
-			color: #df0934;
+			color: #583a1b;
 			.introBold();
 			text-align: center;
 			margin-top: 25px;
@@ -2008,7 +2004,7 @@ footer {
 	}
 
 	div.portlet-static-footer {
-		background-color: #008da9;
+		background-color: #583a1b;
 		margin-left: -15px;
 		margin-right: -15px;
 		p {
@@ -2076,7 +2072,7 @@ footer {
 				left: 0;
 				width: 300px;
 				height: 145px;
-				background: url('++resource++plonetheme.modernbase/footer-topleft.svg');
+				background: url('++resource++plonetheme.veenkoloniaalmuseum/footer-topleft.svg');
 			}
 
 			.bottom-left-background {
@@ -2085,7 +2081,7 @@ footer {
 			    bottom: 0;
 			    width: 200px;
 			    height: 250px;
-			    background: url("++resource++plonetheme.modernbase/footer-bottomleft.svg");
+			    background: url("++resource++plonetheme.veenkoloniaalmuseum/footer-bottomleft.svg");
 			}
 
 			.right-background {
@@ -2094,7 +2090,7 @@ footer {
 			    right: 0;
 			    width: 250px;
 			    height: 330px;
-			    background: url('++resource++plonetheme.modernbase/footer-right.svg');
+			    background: url('++resource++plonetheme.veenkoloniaalmuseum/footer-right.svg');
 			}
 
 		}
@@ -2233,7 +2229,7 @@ footer {
 			left: 0;
 			width: 24px;
 			height: 60px;
-			background: url('++resource++plonetheme.modernbase/ticketbox.svg');
+			background: url('++resource++plonetheme.veenkoloniaalmuseum/ticketbox.svg');
 		}
 	}
 
@@ -2321,7 +2317,7 @@ footer {
 			left: 0;
 			width: 200px;
 			height: 250px;
-			background: url('++resource++plonetheme.modernbase/email-left.svg');
+			background: url('++resource++plonetheme.veenkoloniaalmuseum/email-left.svg');
 		}
 
 		.email-right-background {
@@ -2330,7 +2326,7 @@ footer {
 			right: 0;
 			width: 200px;
 			height: 250px;
-			background: url('++resource++plonetheme.modernbase/email-right.svg');
+			background: url('++resource++plonetheme.veenkoloniaalmuseum/email-right.svg');
 		}
 	}
 }
@@ -2560,7 +2556,7 @@ body.frontend.template-search {
 			}
 
 			&:hover {
-				color: #0085a1;
+				color: #583a1b;
 			}
 
 		}
@@ -2571,10 +2567,10 @@ body.frontend.template-search {
 
 		a:hover {
 			text-decoration: underline;
-			color: #0085a1;
+			color: #583a1b;
 
 			h4 {
-				color: #0085a1;
+				color: #583a1b;
 			}
 		}
 
@@ -2623,10 +2619,10 @@ body.frontend.template-default_error_message {
 
 	a:hover {
 		text-decoration: underline;
-		color: #0085a1;
+		color: #583a1b;
 
 		h4 {
-			color: #0085a1;
+			color: #583a1b;
 		}
 	}
 
@@ -3305,7 +3301,7 @@ body.template-online_experience {
 	display: none;
 }
 
-body.frontend.site-Markiezenhof {
+body.frontend.site-veenkoloniaalmuseum {
 	#above-content {
 	    width: 100%;
 	    padding-right: 0px;
@@ -3353,7 +3349,7 @@ body.template-folder_contents {
     display: none !important;
 }
 
-body.site-Markiezenhof {
+body.site-veenkoloniaalmuseum {
 	@media (max-width: 768px) {
 		.portlet-static-online-tickets, .portlet-weekday {
 			padding-bottom: 5px !important;
@@ -3374,7 +3370,7 @@ body.site-Markiezenhof {
 	}
 }
 
-body.frontend.site-Markiezenhof,
+body.frontend.site-veenkoloniaalmuseum,
 body.frontend {
 	@media (max-width: 767px) {
 		.title-container {

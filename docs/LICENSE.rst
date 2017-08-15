@@ -1,4 +1,4 @@
-plonetheme.modernbase Copyright 2016, Andre Goncalves
+plonetheme.veenkoloniaalmuseum Copyright 2016, Andre Goncalves
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License version 2

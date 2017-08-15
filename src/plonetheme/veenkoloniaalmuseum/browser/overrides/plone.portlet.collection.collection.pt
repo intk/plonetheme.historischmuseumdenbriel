@@ -11,12 +11,12 @@
         </a>
         <h2 tal:content="python:collection_item.Description()"></h2>
         <span class="portletTopRight"></span>
-        <tal:render_separator tal:condition="python: 'markiezenhof' in context.absolute_url()" tal:on-error="nothing">
+        <tal:render_separator tal:condition="python: 'veenkoloniaalmuseum' in context.absolute_url()" tal:on-error="nothing">
           <div class="separator-wrapper">
-              <img src="++resource++plonetheme.modernbase/seperator.svg" class="title-separator"/>
+              <img src="++resource++plonetheme.veenkoloniaalmuseum/seperator.svg" class="title-separator"/>
           </div>
         </tal:render_separator>
-        <tal:render_separator_hr tal:condition="python: 'markiezenhof' not in context.absolute_url()" tal:on-error="nothing">
+        <tal:render_separator_hr tal:condition="python: 'veenkoloniaalmuseum' not in context.absolute_url()" tal:on-error="nothing">
           <div class="separator-wrapper">
               <hr class="separator"/>
           </div>

@@ -8,7 +8,6 @@
 
     <theme href="backend.html" css:if-not-content="body.frontend"/>
     <theme href="index_online_experience.html" css:if-content="body.template-online_experience"/>
-    <theme href="index_kasteel.html" css:if-content="body.site-KasteelDeHaar"/>
     <theme href="index.html" css:if-content="body.frontend"/>
 
     <notheme css:if-not-content="#visual-portal-wrapper" />
@@ -80,7 +79,7 @@
       
       <drop css:content=".documentDescription"/>
       <drop css:content=".documentFirstHeading"/>
-      <drop css:theme=".nav-home-wrapper" css:if-content="body.site-Markiezenhof"/>
+      <drop css:theme=".nav-home-wrapper" css:if-content="body.site-veenkoloniaalmuseum"/>
       
       <replace
         css:theme-children="#nav-search-wrapper"

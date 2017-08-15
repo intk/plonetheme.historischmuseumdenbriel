@@ -1,5 +1,5 @@
 ====================
-plonetheme.modernbase
+plonetheme.veenkoloniaalmuseum
 ====================
 
 User documentation

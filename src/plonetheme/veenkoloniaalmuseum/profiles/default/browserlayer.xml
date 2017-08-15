@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <layers>
   <layer
-      name="plonetheme.modernbase"
-      interface="plonetheme.modernbase.interfaces.IPlonethemeModernBaseLayer"
+      name="plonetheme.veenkoloniaalmuseum"
+      interface="plonetheme.veenkoloniaalmuseum.interfaces.IPlonethemeModernBaseLayer"
       />
 </layers>

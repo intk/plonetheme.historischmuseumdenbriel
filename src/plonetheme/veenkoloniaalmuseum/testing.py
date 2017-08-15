@@ -7,7 +7,7 @@ from plone.app.testing import IntegrationTesting
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
 
-import plonetheme.modernbase
+import plonetheme.veenkoloniaalmuseum
 
 
 class PlonethemeModernBaseLayer(PloneSandboxLayer):
@@ -18,24 +18,24 @@ class PlonethemeModernBaseLayer(PloneSandboxLayer):
         # Load any other ZCML that is required for your tests.
         # The z3c.autoinclude feature is disabled in the Plone fixture base
         # layer.
-        self.loadZCML(package=plonetheme.modernbase)
+        self.loadZCML(package=plonetheme.veenkoloniaalmuseum)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'plonetheme.modernbase:default')
+        applyProfile(portal, 'plonetheme.veenkoloniaalmuseum:default')
 
 
-PLONETHEME_MODERNBASE_FIXTURE = PlonethememodernbaseLayer()
+PLONETHEME_MODERNBASE_FIXTURE = PlonethemeveenkoloniaalmuseumLayer()
 
 
 PLONETHEME_MODERNBASE_INTEGRATION_TESTING = IntegrationTesting(
     bases=(PLONETHEME_MODERNBASE_FIXTURE,),
-    name='PlonethememodernbaseLayer:IntegrationTesting'
+    name='PlonethemeveenkoloniaalmuseumLayer:IntegrationTesting'
 )
 
 
 PLONETHEME_MODERNBASE_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(PLONETHEME_MODERNBASE_FIXTURE,),
-    name='PlonethememodernbaseLayer:FunctionalTesting'
+    name='PlonethemeveenkoloniaalmuseumLayer:FunctionalTesting'
 )
 
 
@@ -45,5 +45,5 @@ PLONETHEME_MODERNBASE_ACCEPTANCE_TESTING = FunctionalTesting(
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE
     ),
-    name='PlonethememodernbaseLayer:AcceptanceTesting'
+    name='PlonethemeveenkoloniaalmuseumLayer:AcceptanceTesting'
 )
