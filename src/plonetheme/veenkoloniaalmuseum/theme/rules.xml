@@ -81,6 +81,9 @@
       <drop css:content=".documentFirstHeading"/>
       <drop css:theme=".nav-home-wrapper" css:if-content="body.site-veenkoloniaalmuseum"/>
       
+      <drop css:theme=".lang-link-en" css:if-content="body.site-en"/>
+      <drop css:theme=".lang-link-nl" css:if-content="body.site-nl"/>
+
       <replace
         css:theme-children="#nav-search-wrapper"
         css:content-children="#portal-searchbox"
