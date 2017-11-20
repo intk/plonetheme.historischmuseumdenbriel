@@ -13,7 +13,7 @@
         <span class="portletTopRight"></span>
         <tal:render_separator tal:condition="python: 'veenkoloniaalmuseum' in context.absolute_url()" tal:on-error="nothing">
           <div class="separator-wrapper">
-              <img src="++resource++plonetheme.veenkoloniaalmuseum/seperator.svg" class="title-separator"/>
+              <hr class="separator"/>
           </div>
         </tal:render_separator>
         <tal:render_separator_hr tal:condition="python: 'veenkoloniaalmuseum' not in context.absolute_url()" tal:on-error="nothing">

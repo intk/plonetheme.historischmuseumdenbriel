@@ -872,7 +872,7 @@ body:not(.frontend) {
 	letter-spacing: 0.05em;
 	width: auto;
 	font-size: 20px;
-	background-color: #583a1b;
+	background-color: @blue-dark;
 	letter-spacing: 0.15em;
 	text-shadow: 0px 0px 0px #ffffff;
 	
@@ -890,7 +890,7 @@ body:not(.frontend) {
 
 
 	&:hover {
-		background: #005A76;
+		background: @brand-primary;
 		/*box-shadow: none;*/
 	}
 }
@@ -930,7 +930,7 @@ body:not(.frontend) {
 
 .documentLayout() {
 	h1 {
-		color: #583a1b;
+		color: @brand-primary;
 		.introBold();
 	}
 
@@ -1113,8 +1113,8 @@ body.frontend, body#tinymce {
 	}
 
 	.pager li.active span {
-		background-color: #583a1b;
-		border: 1px solid #583a1b !important;
+		background-color: @brand-primary;
+		border: 1px solid @brand-primary !important;
 	}
 
 	.pagination {
@@ -1233,13 +1233,13 @@ body.frontend, body#tinymce {
     	}
 
     	h1 {
-    		color: #583a1b;
+    		color: @brand-primary;
     		margin-bottom: 30px;
     		.introBold();
     	}
 
     	.subheading {
-    		color: #583a1b;
+    		color: @brand-primary;
     		font-size: 24px;
     		.introLight();
     	}
@@ -1442,7 +1442,7 @@ body.frontend, body#tinymce {
 
 		p.event-date {
 			font-size: 20px;
-			color: #228ea7;
+			color: @blue-dark;
 			margin-bottom: 20px;
 		}
 
@@ -1504,6 +1504,7 @@ body.frontend, body#tinymce {
 		padding: 0;
 		margin-left: 0;
 		letter-spacing: 0.05em;
+		color: @blue-dark;
 	}
 
 	.event-date-title {
@@ -1555,7 +1556,7 @@ body.frontend, body#tinymce {
 
 		h1 {
 			font-size: 42px;
-			color: #583a1b;
+			color: @brand-primary;
 			.introBold();
 			text-align: center;
 			margin-top: 25px;
@@ -2004,7 +2005,7 @@ footer {
 	}
 
 	div.portlet-static-footer {
-		background-color: #583a1b;
+		background-color: @brand-primary;
 		margin-left: -15px;
 		margin-right: -15px;
 		p {
@@ -2041,6 +2042,10 @@ footer {
 	.social-media-wrapper, .footer-wrapper {
 		padding-top: 55px;
 		padding-bottom: 45px;
+	}
+
+	.footer-wrapper {
+		border-top: 5px solid @orange-dark;
 	}
 
 	.social-media-wrapper {
@@ -2317,7 +2322,7 @@ footer {
 			left: 0;
 			width: 200px;
 			height: 250px;
-			background: url('++resource++plonetheme.veenkoloniaalmuseum/email-left.svg');
+			background: transparent;
 		}
 
 		.email-right-background {
@@ -2326,7 +2331,7 @@ footer {
 			right: 0;
 			width: 200px;
 			height: 250px;
-			background: url('++resource++plonetheme.veenkoloniaalmuseum/email-right.svg');
+			background: transparent;
 		}
 	}
 }
@@ -2413,7 +2418,7 @@ body.frontend.template-search {
 
 	p.event-date {
 		font-size: 20px;
-		color: #228ea7;
+		color: @blue-dark;
 		margin-bottom: 20px;
 		margin-top: 20px;
 	}
@@ -2556,7 +2561,7 @@ body.frontend.template-search {
 			}
 
 			&:hover {
-				color: #583a1b;
+				color: @brand-primary;
 			}
 
 		}
@@ -2567,10 +2572,10 @@ body.frontend.template-search {
 
 		a:hover {
 			text-decoration: underline;
-			color: #583a1b;
+			color: @brand-primary;
 
 			h4 {
-				color: #583a1b;
+				color: @brand-primary;
 			}
 		}
 
@@ -2619,10 +2624,10 @@ body.frontend.template-default_error_message {
 
 	a:hover {
 		text-decoration: underline;
-		color: #583a1b;
+		color: @brand-primary;
 
 		h4 {
-			color: #583a1b;
+			color: @brand-primary;
 		}
 	}
 
@@ -2636,7 +2641,7 @@ body.frontend.template-default_error_message {
 
 	p.event-date {
 		font-size: 20px;
-		color: #228ea7;
+		color: @blue-dark;
 		margin-bottom: 20px;
 		margin-top: 20px;
 	}
@@ -3418,9 +3423,15 @@ body.frontend.slideshow-empty {
 .separator-wrapper hr {
 	width: 280px;
 	color: @brand-primary;
-	border-top: 1px solid @brand-primary !important;
+	border-top: 3px solid @brand-primary !important;
 }
 
 
+
+i.glyphicon.link-external,
+i.glyphicon.link-mailto,
+i.glyphicon.link-https {
+    display: none !important;
+}
 
 
