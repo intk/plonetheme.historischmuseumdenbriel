@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from plonetheme.veenkoloniaalmuseum.testing import plonetheme.veenkoloniaalmuseum_ACCEPTANCE_TESTING  # noqa
+from plonetheme.historischmuseumdenbriel.testing import plonetheme.historischmuseumdenbriel_ACCEPTANCE_TESTING  # noqa
 from plone.app.testing import ROBOT_TEST_LEVEL
 from plone.testing import layered
 
@@ -22,7 +22,7 @@ def test_suite():
         suite.addTests([
             layered(
                 robottestsuite,
-                layer=plonetheme.veenkoloniaalmuseum_ACCEPTANCE_TESTING
+                layer=plonetheme.historischmuseumdenbriel_ACCEPTANCE_TESTING
             ),
         ])
     return suite

@@ -1,5 +1,5 @@
 ====================
-plonetheme.veenkoloniaalmuseum
+plonetheme.historischmuseumdenbriel
 ====================
 
 User documentation

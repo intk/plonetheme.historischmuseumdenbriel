@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Installer for the plonetheme.veenkoloniaalmuseum package."""
+"""Installer for the plonetheme.historishmuseumdenbriel package."""
 
 from setuptools import find_packages
 from setuptools import setup
@@ -13,7 +13,7 @@ long_description = '\n\n'.join([
 
 
 setup(
-    name='plonetheme.veenkoloniaalmuseum',
+    name='plonetheme.historischmuseumdenbriel',
     version='0.1',
     description="An installable theme for Plone 5",
     long_description=long_description,
@@ -30,7 +30,7 @@ setup(
     keywords='Python Plone',
     author='Andre Goncalves',
     author_email='andre@intk.com',
-    url='https://github.com/intk/plonetheme.veenkoloniaalmuseum',
+    url='https://github.com/intk/plonetheme.historischmuseumdenbriel',
     license='GPL version 2',
     packages=find_packages('src', exclude=['ez_setup']),
     namespace_packages=['plonetheme'],
