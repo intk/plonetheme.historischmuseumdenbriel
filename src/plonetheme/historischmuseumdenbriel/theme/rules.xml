@@ -79,7 +79,7 @@
       
       <drop css:content=".documentDescription"/>
       <drop css:content=".documentFirstHeading"/>
-      <drop css:theme=".nav-home-wrapper" css:if-content="body.site-veenkoloniaalmuseum"/>
+      <drop css:theme=".nav-home-wrapper" css:if-content="body.site-historischmuseumdenbriel"/>
       
       <drop css:theme="h5.lang-link-de" css:if-content="body.site-en"/>
       <drop css:theme="h5.lang-link-lv" css:if-content="body.site-en"/>
