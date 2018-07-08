@@ -265,7 +265,7 @@ hr.small {
 }
 footer {
   padding: 50px 0 65px;
-  font-size:14px;
+  font-size:12px;
 }
 footer .list-inline {
   margin: 0;
@@ -393,4 +393,8 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #583a1b;
+}
+
+footer {
+  font-size:12px;
 }
