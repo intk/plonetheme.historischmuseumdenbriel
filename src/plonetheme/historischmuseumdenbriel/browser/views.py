@@ -3,8 +3,22 @@ from Products.Five import BrowserView
 from datetime import date, datetime, timedelta
 from DateTime import DateTime
 import time
+from plone.app.uuid.utils import uuidToCatalogBrain
 
 class ContextToolsView(BrowserView):
+
+    def getImageObject(self, item, scale="large"):
+        if item.portal_type == "Image":
+            return item.getURL()+"/@@images/image/%s" %(scale)
+        if item.leadMedia != None:
+            uuid = item.leadMedia
+            media_object = uuidToCatalogBrain(uuid)
+            if media_object:
+                return media_object.getURL()+"/@@images/image/%s" %(scale)
+            else:
+                return None
+        else:
+            return None
 
     def isEventPast(self, event):
         """ Checks if the event is already past """
@@ -48,6 +62,16 @@ class ContextToolsView(BrowserView):
             except:
                 return False
         return True
+
+    def getCollectionItems(self, item):
+        collection = item.getObject()
+
+        results = []
+        if collection is not None:
+            results = collection.queryCatalog()
+
+        return results
+
 
 class OnlineExperienceView(BrowserView):
 
