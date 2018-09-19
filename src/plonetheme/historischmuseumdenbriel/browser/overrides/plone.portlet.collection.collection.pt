@@ -58,7 +58,7 @@
                   tal:define="is_past python: context.restrictedTraverse('@@context_tools').isEventPast(obj);
                               is_permanent python: context.restrictedTraverse('@@context_tools').isEventPermanent(obj)">
                   <p class="event-date" tal:attributes="class python: 'event-date %s %s' % (('past' if is_past else ''), ('permanent' if is_permanent else ''))">
-                    <tal:date tal:replace="structure python:view.formatted_date(obj.getObject())"/>
+                    <tal:date tal:replace="structure python:context.restrictedTraverse('@@context_tools').formatted_date(obj)"/>
                   </p>
                   </tal:event>
                 </metal:block>
@@ -103,7 +103,7 @@
                           tal:define="col_is_past python: context.restrictedTraverse('@@context_tools').isEventPast(colitem);
                                       col_is_permanent python: context.restrictedTraverse('@@context_tools').isEventPermanent(colitem)">
                           <p class="event-date" tal:attributes="class python: 'event-date %s %s' % (('past' if col_is_past else ''), ('permanent' if col_is_permanent else ''))">
-                            <tal:date tal:replace="structure python:view.formatted_date(colitem.getObject())"/>
+                            <tal:date tal:replace="structure python:context.restrictedTraverse('@@context_tools').formatted_date(colitem)"/>
                           </p>
                           </tal:event>
 

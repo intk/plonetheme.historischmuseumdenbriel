@@ -4,8 +4,18 @@ from datetime import date, datetime, timedelta
 from DateTime import DateTime
 import time
 from plone.app.uuid.utils import uuidToCatalogBrain
+from zope.component import getMultiAdapter
+from zope.contentprovider.interfaces import IContentProvider
 
 class ContextToolsView(BrowserView):
+
+    def formatted_date(self, obj):
+        item = obj.getObject()
+        provider = getMultiAdapter(
+            (self.context, self.request, self),
+            IContentProvider, name='formatted_date'
+        )
+        return provider(item)
 
     def getImageObject(self, item, scale="large"):
         if item.portal_type == "Image":
