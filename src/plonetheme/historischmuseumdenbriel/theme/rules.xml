@@ -41,7 +41,6 @@
         />
 
       <replace css:theme-children=".brand-logo" css:content="#portal-logo"/>
-      <replace css:theme-children=".logo-nav-wrapper" css:content="#portal-logo"/>
 
       <!-- login link -->
       <!--<after
