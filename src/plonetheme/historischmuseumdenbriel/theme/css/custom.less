@@ -1013,9 +1013,9 @@ body:not(.frontend) {
 
 #portal-logo {
 	position: absolute;
-	top: 0;
-	right: 0;
-	width: 90px;
+	top: 20px;
+	right: 20px;
+	width: 300px;
 	height: auto;
 	background-color: transparent;
 	cursor: pointer;
@@ -1029,9 +1029,17 @@ body:not(.frontend) {
 	}
 
 	@media (max-width: 768px) {
-		width: 70px;
-		height: 70px;
+		width: 150px;
 	}
+}
+
+.logo-nav-wrapper #portal-logo {
+  width: 150px;
+  height: auto;
+  display: block;
+  cursor: pointer;
+  margin:0 auto;
+  padding:10px 0 0 0;
 }
 
 @media (max-width: 769px) {
