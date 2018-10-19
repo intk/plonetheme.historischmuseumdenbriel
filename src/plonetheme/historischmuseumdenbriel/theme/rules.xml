@@ -215,10 +215,10 @@
       <replace css:theme-children="footer .container" css:content-children="#portal-footer-wrapper" />
 
       <replace css:content="#form-widgets-email" css:if-content="body.site-nl">
-        <input id="form-widgets-email" name="form.widgets.email" class="text-widget required textline-field" value="" type="text" placeholder="Uw mailadres">
+        <input id="form-widgets-email" name="form.widgets.email" class="text-widget required textline-field" value="" type="text" placeholder="Uw mailadres"/>
       </replace>
       <replace css:content="#form-widgets-email" css:if-content="body.site-en">
-        <input id="form-widgets-email" name="form.widgets.email" class="text-widget required textline-field" value="" type="text" placeholder="Your Email">
+        <input id="form-widgets-email" name="form.widgets.email" class="text-widget required textline-field" value="" type="text" placeholder="Your Email"/>
       </replace>
     
 </rules>
