@@ -1,13 +1,11 @@
 
-var lat = '51.927709';
-var lng = '4.140634';
+var lat = document.getElementById("googleMap").getAttribute("lat");
+var lng = document.getElementById("googleMap").getAttribute("lng");
 
-//GOOGLE MAPS ROUTEKAART
+//GOOGLE MAPS ROUTE
 var myCenter=new google.maps.LatLng(lat,lng);
 
-setTimeout(startMap(), 1);
-
-function startMap() {
+function loadMap() {
 
 	function initialize() {
 		var mapProp = {
