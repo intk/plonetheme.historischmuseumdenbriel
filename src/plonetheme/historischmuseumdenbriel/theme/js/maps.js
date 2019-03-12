@@ -1,6 +1,6 @@
 
-var lat = document.getElementById("googleMap").getAttribute("lat").val();
-var lng = document.getElementById("googleMap").getAttribute("lng").val();
+var lat = document.getElementById("googleMap").getAttribute("lat");
+var lng = document.getElementById("googleMap").getAttribute("lng");
 
 //GOOGLE MAPS ROUTE
 var myCenter=new google.maps.LatLng(lat,lng);
