@@ -407,6 +407,8 @@ document.addEventListener("DOMContentLoaded", function() {
               data: "launched=true",
               success: function() {
                 confettiLoaded = true;
+                self.setTimeout(function(){ $('#confetti').fadeOut(1000, function() { confetti.stop(); }); }, 10000);
+
               },
             });
           }
@@ -414,8 +416,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
   }, 1000);
 
-
-  //self.setTimeout(function(){ $('#confetti').fadeOut(1000, function() { confetti.stop(); }); }, 10000);
   window.addEventListener('resize', function(event){
     confetti.resize();
   });
