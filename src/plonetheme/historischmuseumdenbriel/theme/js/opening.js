@@ -401,15 +401,15 @@ document.addEventListener("DOMContentLoaded", function() {
           if (!confettiLoaded) {
             confetti.start();
             confettiLoaded = true;
+            $.ajax({
+              url:"https://historischmuseumdenbriel-dev.intk.com/opening/post.php",
+              type:"POST",
+              data: "launched=true",
+              success: function() {
+                confettiLoaded = true;
+              },
+            });
           }
-          $.ajax({
-            url:"https://historischmuseumdenbriel-dev.intk.com/opening/post.php",
-            type:"POST",
-            data: "launched=true",
-            success: function() {
-              confettiLoaded = true;
-            },
-          });
         }
       });
   }, 1000);
