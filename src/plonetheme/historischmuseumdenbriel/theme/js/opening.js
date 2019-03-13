@@ -1,3 +1,4 @@
+var confettiLoaded = false;
 var retina = window.devicePixelRatio,
 
     // Math shorthands
@@ -390,15 +391,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Make AJAX Call to JSON file
   setInterval(function() {
-    $.ajax({
-      url:"https://historischmuseumdenbriel-dev.intk.com/opening/button.json",
-      type:"GET",
-      dataType:"json"
-    }).done(function(data) {
-      if (data.buttonPressed == 'success') {
-        confetti.start();
-      }
-    });
+    if (!confettiLoaded) {
+      $.ajax({
+        url:"https://historischmuseumdenbriel-dev.intk.com/opening/button.json",
+        type:"GET",
+        dataType:"json"
+      }).done(function(data) {
+        if (data.buttonPressed == 'success') {
+          confetti.start();
+          $.ajax({
+            url:"https://historischmuseumdenbriel-dev.intk.com/opening/post.php",
+            type:"POST",
+            data: 'payload={"buttonPressed":"success","time":'+data.time+'"}',
+            success: function() {
+              confettiLoaded = true;
+            },
+          });
+        }
+        if (data.buttonPressed == 'launched') {
+          confettiLoaded = true;
+        }
+      });
+    }
   }, 1000);
 
 
