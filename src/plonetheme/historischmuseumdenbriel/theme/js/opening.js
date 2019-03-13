@@ -415,7 +415,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }, 1000);
 
 
-  self.setTimeout(function(){ $('#confetti').fadeOut(1000, function() { confetti.stop(); }); }, 10000);
+  //self.setTimeout(function(){ $('#confetti').fadeOut(1000, function() { confetti.stop(); }); }, 10000);
   window.addEventListener('resize', function(event){
     confetti.resize();
   });
