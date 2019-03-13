@@ -391,12 +391,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Make AJAX Call to JSON file
   setInterval(function() {
-    if (!confettiLoaded) {
       $.ajax({
         url:"https://historischmuseumdenbriel-dev.intk.com/opening/button.json",
         type:"GET",
         dataType:"json"
       }).done(function(data) {
+        console.log(data.buttonPressed);
         if (data.buttonPressed == 'success') {
           confetti.start();
           $.ajax({
