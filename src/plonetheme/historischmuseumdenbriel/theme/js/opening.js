@@ -391,6 +391,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Make AJAX Call to JSON file
   setInterval(function() {
+    if (!confettiLoaded) {
       $.ajax({
         url:"https://historischmuseumdenbriel-dev.intk.com/opening/button.json",
         type:"GET",
@@ -412,6 +413,7 @@ document.addEventListener("DOMContentLoaded", function() {
           confettiLoaded = true;
         }
       });
+    }
   }, 1000);
 
 
