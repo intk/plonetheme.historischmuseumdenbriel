@@ -387,8 +387,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
   var confetti = new confetti.Context('confetti');
-  confetti.start();
-
 
   // Make AJAX Call to JSON file
   setInterval(function() {
