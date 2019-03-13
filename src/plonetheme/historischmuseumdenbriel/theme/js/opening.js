@@ -399,16 +399,22 @@ document.addEventListener("DOMContentLoaded", function() {
         if (data.buttonPressed == 'success') {
           $('#confetti').fadeIn(1);
           console.log(data.buttonPressed);
-            confetti.start();
-            $.ajax({
-              url:"https://historischmuseumdenbriel-dev.intk.com/opening/post.php",
-              type:"POST",
-              data: "launched=true",
-              success: function() {
-                self.setTimeout(function(){ $('#confetti').fadeOut(1000, function() { confetti.stop(); }); }, 10000);
+            if (!confettiLoaded) {
+              confetti.start();
+              confettiLoaded = true;
+            }
 
-              },
-            });
+            self.setTimeout(function(){ $('#confetti').fadeOut(1000, function() {
+            confetti.stop();
+              $.ajax({
+                url:"https://historischmuseumdenbriel-dev.intk.com/opening/post.php",
+                type:"POST",
+                data: "launched=true",
+                success: function() {
+                  confettiLoaded = false;
+                },
+              });
+            }); }, 10000);
         }
       });
   }, 1000);
