@@ -402,7 +402,7 @@ document.addEventListener("DOMContentLoaded", function() {
           $.ajax({
             url:"https://historischmuseumdenbriel-dev.intk.com/opening/post.php",
             type:"POST",
-            data: 'payload={"buttonPressed":"launched","time":'+data.time+'}',
+            data: "launched=true",
             success: function() {
               confettiLoaded = true;
             },
