@@ -400,6 +400,7 @@ document.addEventListener("DOMContentLoaded", function() {
           console.log(data.buttonPressed);
           if (!confettiLoaded) {
             confetti.start();
+            confettiLoaded = true;
           }
           $.ajax({
             url:"https://historischmuseumdenbriel-dev.intk.com/opening/post.php",
@@ -410,11 +411,7 @@ document.addEventListener("DOMContentLoaded", function() {
             },
           });
         }
-        if (data.buttonPressed == 'launched') {
-          confettiLoaded = true;
-        }
       });
-    }
   }, 1000);
 
 
