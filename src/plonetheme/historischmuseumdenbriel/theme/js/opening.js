@@ -397,6 +397,7 @@ document.addEventListener("DOMContentLoaded", function() {
         dataType:"json"
       }).done(function(data) {
         if (data.buttonPressed == 'success') {
+          $('#confetti').fadeIn(1);
           console.log(data.buttonPressed);
             confetti.start();
             $.ajax({
