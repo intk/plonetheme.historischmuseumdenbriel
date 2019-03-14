@@ -392,7 +392,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // Make AJAX Call to JSON file
   setInterval(function() {
       $.ajax({
-        url:"https://historischmuseumdenbriel.nl/opening/button.json",
+        url:"https://www.historischmuseumdenbriel.nl/opening/button.json",
         type:"GET",
         dataType:"json"
       }).done(function(data) {
@@ -407,7 +407,7 @@ document.addEventListener("DOMContentLoaded", function() {
             self.setTimeout(function(){ $('#confetti').fadeOut(1000, function() {
             confetti.stop();
               $.ajax({
-                url:"https://historischmuseumdenbriel.nl/opening/post.php",
+                url:"https://www.historischmuseumdenbriel.nl/opening/post.php",
                 type:"POST",
                 data: "launched=true",
                 success: function() {
