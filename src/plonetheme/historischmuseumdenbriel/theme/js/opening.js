@@ -389,6 +389,13 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   var confetti = new confetti.Context('confetti');
 
+  // Get IP Address
+  var clientIP = '';
+  $.getJSON("https://api.ipify.org/?format=json", function(e) {
+    console.log(e.ip);
+    clientIP = e.ip;
+  });
+
   // Make AJAX Call to JSON file
   setInterval(function() {
       $.ajax({
@@ -396,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function() {
         type:"GET",
         dataType:"json"
       }).done(function(data) {
-        if (data.buttonPressed == 'success') {
+        if (data.buttonPressed == 'success' && clientIP == data.ip) {
           console.log(data.buttonPressed);
             if (!confettiLoaded) {
               $('#confetti').fadeIn(1);
