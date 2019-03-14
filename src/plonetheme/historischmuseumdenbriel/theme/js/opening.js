@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function() {
         type:"GET",
         dataType:"json"
       }).done(function(data) {
-        if (data.buttonPressed == 'success' && clientIP == data.ip) {
+        if (data.buttonPressed == 'success') {
           console.log(data.buttonPressed);
             if (!confettiLoaded) {
               $('#confetti').fadeIn(1);
