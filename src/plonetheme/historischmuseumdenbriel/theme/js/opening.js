@@ -417,7 +417,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }); }, 10000);
         }
       });
-  }, 1000);
+  }, 500);
 
   window.addEventListener('resize', function(event){
     confetti.resize();
