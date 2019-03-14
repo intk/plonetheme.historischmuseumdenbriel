@@ -421,7 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
                   confettiLoaded = false;
                 },
               });
-            }); }, 10000);
+            }); }, 15000);
         }
       });
   }, 500);
