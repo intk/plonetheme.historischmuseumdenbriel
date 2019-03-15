@@ -2876,9 +2876,21 @@ body.frontend.template-default_error_message {
 
 		@media (max-width: 768px) {
 			position: initial;
+			clear:both;
+    		float:left;
+    		right:none;
+    		left:5%;
+    		margin:0 0 30px 30px;
+    		display:none;
 			h5 {
 				text-align: right;
 			}
+		}
+	}
+
+	.language-wrapper.mobile {
+		@media (max-width: 768px) {
+			display:block;
 		}
 	}
 }
