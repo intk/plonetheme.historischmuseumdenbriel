@@ -1,13 +1,12 @@
 //GOOGLE MAPS ROUTE
-var myCenter=new google.maps.LatLng(lat,lng);
-
 setTimeout(startMap(), 1);
 
 function startMap() {
 	if (document.getElementById("googleMap")) {
 		var lat = document.getElementById("googleMap").getAttribute("lat");
 		var lng = document.getElementById("googleMap").getAttribute("lng");
-		
+		var myCenter=new google.maps.LatLng(lat,lng);
+
 		function initialize() {
 			var mapProp = {
 			  center:myCenter,
