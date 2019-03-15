@@ -222,7 +222,7 @@
       </replace>
 
       <!-- Add scroll sign on bottom of of slickcarousel -->
-      <after css:theme-children=".carousel-wrapper">
+      <after css:content=".carousel-wrapper">
         <div class="slickcarousel-scroll"><span></span></div>
       </after>
 
