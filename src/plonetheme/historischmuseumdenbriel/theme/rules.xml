@@ -223,7 +223,7 @@
 
       <!-- Add scroll sign on bottom of of slickcarousel -->
       <after css:content=".slideshow-wrapper">
-        <div class="slickcarousel-scroll"><span></span></div>
+        <div class="slickcarousel-scroll"></div>
       </after>
 
     
