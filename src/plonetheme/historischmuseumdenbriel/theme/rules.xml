@@ -220,5 +220,11 @@
       <replace css:content="#form-widgets-email" css:if-content="body.site-en">
         <input id="form-widgets-email" name="form.widgets.email" class="text-widget required textline-field" value="" type="text" placeholder="Your Email"/>
       </replace>
+
+      <!-- Add scroll sign on bottom of of slickcarousel -->
+      <after css:theme-children=".carousel-wrapper">
+        <div class="slickcarousel-scroll"><span></span></div>
+      </after>
+
     
 </rules>
