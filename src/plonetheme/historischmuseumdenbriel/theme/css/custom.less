@@ -3514,7 +3514,7 @@ body.template-search .page-container {
 	padding-top: 150px !important;
 }
 
-body.frontend.slideshow-empty {
+body.frontend.slideshow-empty:not(.template-cart):not(.template-checkout):not(.template-ogone_payment_success) {
     .intro-header {
         height: 0px !important;
         display: none;
@@ -3565,5 +3565,1208 @@ body.frontend .floating-label-form-group label span.required {
   z-index:1000;
   pointer-events:none;
 }
+
+
+/* TICKETS */
+
+body.template-ogone_payment_success {
+	a.payment_button {
+		.buttonField();
+		display: inline-block;
+	}
+}
+
+body.template-cart,
+body.template-checkout {
+	.recurrent-event.disable {
+	    display: none !important;
+	}
+
+	#form-widgets-email {
+		width: 100% !important;
+	}
+
+	span.cart_item_alert {
+		line-height: 35px;
+	}
+
+	.cart_item.recurrent-event {
+		td:not(.type-ticket-td) {
+			span, select {
+				visibility: hidden !important;
+			}
+		}
+	}
+
+	.subtotal-th, .subtotal-col {
+		padding-right: 0px !important;
+	}
+	
+	.subtotal-col {
+		padding-top: 27px !important;
+	}
+
+	.post-cart {
+		padding-bottom: 50px;
+	}
+
+	#slickcarousel {
+		background-image: url(/nl/front-page-slideshow/keller-cut-out.jpg/@@images/image/large);
+	    position: relative;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		background-position: center;
+	}
+
+	#slickcarousel:before {
+		padding-top: 35%;
+	}
+
+	.intro-header {
+		position: relative;
+	}
+
+	div#website-title {
+		position: absolute;
+		width: 100%;
+		text-align: center;
+		top: 48%;
+
+		h1 {
+		    font-weight: 800 !important;
+		    font-size: 3.125em !important;
+		    line-height: 50px !important;
+		    color: #ffffff !important;
+		    letter-spacing: 0.02em;
+		    text-transform: uppercase;
+		    margin: 0 auto;
+		    display: block;
+
+		    @media (max-width: 991px) {
+				font-size: 36px !important;
+			}	
+
+			.introCondRegular();
+		}
+
+		@media (max-width: 991px) {
+			
+		}
+
+		
+	}
+
+	.brand-name {
+	}
+
+	.title-container {
+		padding-top: 50px;
+	}
+
+	h2 {
+	    font-weight: 700;
+	    color: #F59332;
+	    line-height: 36px;
+	    font-size: 1.875em;
+	    margin: 0 0;
+	}
+
+	p {
+	    letter-spacing: 0.00em;
+	    line-height: 33px;
+	    color: #333333;
+	}
+
+	h3 {
+	    font-weight: 700;
+	    color: #F59332;
+	    line-height: 24px;
+	    font-size: 1.500em;
+	    margin: 0 0;
+	}
+
+	div.discount_coupon_title h4 {
+		font-size: 20px !important;
+		padding-bottom: 8px !important;
+	}
+
+	input.cart_couponcode {
+		height: 47px !important;
+		font-size: 16px !important;
+	}
+
+
+	div.tickets-breadcrumbs button.btn,
+	div.tickets-breadcrumbs a.btn, 
+	a.btn.discount_coupon_button,
+	a.btn.cart_checkout_button {
+	    background: #377FA6 !important;
+	    font-weight: 400 !important;
+	    color: #ffffff !important;
+	    border-style: solid !important;
+	    border-width: 1px !important;
+	    border-color: #377FA6 !important;
+	    text-transform: uppercase !important;
+	    letter-spacing: 0.05em !important;
+	    border-radius: 0px !important;
+	    padding: 12px 28px !important;
+	    padding-bottom: 10px !important;
+	    .introCondRegular();
+	}
+
+	@media(max-width: 768px) {
+		div.discount_coupon_wrapper {
+			padding: 15px !important;
+		}
+
+		div.post-cart {
+			padding-top: 30px;
+		}
+	}
+
+	a.btn.discount_coupon_button,
+	a.btn.cart_checkout_button {
+		.introCondRegular() !important;
+		height: auto !important;
+		font-size: 14px !important;
+
+		&:hover,
+		&:focus,
+		&:active {
+			background: #005A76 !important;
+			border-color: #005A76 !important;
+		}
+	}
+
+	.tickets-breadcrumbs .btn.step {
+    	margin: 5px 0px;
+	}
+
+	div.tickets-breadcrumbs button.btn.selected,
+	div.tickets-breadcrumbs a.btn.selected {
+	    background: #666666 !important;
+	    cursor: pointer;
+	    pointer-events: none;
+	    color: #ffffff !important;
+	    border-color: #666666 !important;
+	    .introCondRegular();
+	}
+
+	div.tickets-breadcrumbs button.btn:not(.disabled):not(.selected):hover {
+		background: #000000 !important;
+		box-shadow: none !important;
+	}
+
+	div.tickets-breadcrumbs a.btn:not(.disabled):not(.selected):hover {
+		background: #000000 !important;
+		box-shadow: none !important;
+		border-color: #000000 !important;
+	}
+
+	div.tickets-breadcrumbs a.btn {
+		font-size: 1.000em !important;
+		text-shadow: none !important;
+	}
+
+	div.tickets-breadcrumbs {
+	    padding-top: 18px;
+	    padding-bottom: 30px;
+	}
+
+	.h3-like {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+	.cart_item select {
+	    background-color: #F59332 !important;
+	    color: #ffffff !important;
+	    -webkit-transition: none !important;
+	    -o-transition: none !important;
+	    transition: none !important;
+	    -moz-box-shadow: none !important;
+	    -webkit-box-shadow: none !important;
+	    box-shadow: none !important;
+	    width: 102px !important;
+	    border-radius: 0px !important;
+	    -webkit-appearance: none !important;
+	    border: 0 !important;
+	    font-weight: 400 !important;
+	    vertical-align: top;
+	    height: 43px;
+	    padding: 7px 18px;
+	    line-height: 17px;
+	    -moz-appearance: none !important;
+	    text-indent: 0.01px !important;
+	    text-overflow: '' !important;
+	    overflow: hidden;
+	    vertical-align: top;
+
+	    &:hover {
+	    	cursor: pointer;
+	    }
+
+	    @media (max-width: 991px) {
+	    	width: 75px !important;
+	    }
+	}
+
+	.table-responsive {
+		border:0px !important;
+	}
+
+	.cart-select-box {
+    	position: relative;
+    	display: inline-block;
+	}
+
+	.cart-select-box:after {
+		content: " ";
+	    height: 0;
+	    width: 0;
+	    border-left: 5px solid transparent;
+	    border-right: 5px solid transparent;
+	    border-top: 5px solid #ffffff;
+	    position: absolute;
+	    right: 18px;
+	    top: 20px;
+	    transition: all 0.3s linear;
+	    pointer-events: none;
+	}
+
+	.main-container {
+		@media (min-width: 767px) {
+			width: 100%;
+			padding-right: 105px !important;
+			padding-left: 105px !important;
+		}
+	}
+
+	tr.cart-header th h4 {
+	    text-transform: uppercase;
+	    letter-spacing: 0.05em;
+	    background-color: #ffffff !important;
+	    font-size: 1.000em !important;
+	}
+
+	tr.cart-header th {
+		padding-left: 0px;
+	}
+
+	tr.cart_item td {
+		padding-left: 0px;
+		padding-right: 20px;
+		border-bottom: 0.1em solid #e4e4e4;
+		padding-top: 31px;
+    	padding-bottom: 7px;
+
+    	&.quantity-col {
+		    padding-top: 18px;
+			padding-bottom: 20px;
+    	}
+	}
+	.cart_item_content {
+    	padding-top: 0px;
+	}
+
+	tr {
+		font-size: 1.000em;
+	}
+
+	.cart_item {
+	    border-bottom: 0.1em solid #ccc;
+	    padding-bottom: 0.5em;
+	    margin-bottom: 1em;
+	}
+
+	h4 {
+		margin: 0 0;
+		line-height: 21px;
+		color: #333333;
+		font-weight: 400 !important;
+	}
+
+	.separator_template {
+		background: #ffffff;
+		display: none !important;
+	}
+
+	thead {
+		border-bottom: 0.1em solid #ccc;
+	}
+
+	.post-cart h3 {
+		padding-bottom: 30px;
+	}
+
+	.cart_sum_content {
+		margin-top: 30px;
+    	margin-bottom: 50px;
+	}
+
+	a.btn.cart_checkout_button,
+	a.btn.discount_coupon_button {
+		.buttonField();
+		display: inline-block;
+		margin-left: 10px;
+	}
+
+	.portletCalendar {
+		@media (min-width: 991px) {
+			width: 100%;
+			max-width: 650px;
+		}
+
+
+		.visit-msg {
+			margin-bottom: 30px;
+		}
+
+		box-shadow: none !important;
+
+		.portletHeader > a {
+			color: #377FA6;
+		}
+
+		.cal_has_events a:after {
+			display: none !important;
+		}
+
+		.ploneCalendar td.today.selected {
+			border-color: #f3f3f3;
+		}
+
+		.table-time .time-free:not(.time-ua):hover {
+			color: #7ed321 !important;
+		}
+
+		.table-time .time-busy:not(.time-ua) {
+		    color: #7ed321 !important;
+		}
+
+		.table-time .time-busy:not(.time-ua):hover {
+		    color: #7ed321 !important;
+		}
+
+		a.calendarNext:hover {
+			
+		}
+
+		.item-stock-overview {
+			    line-height: 42px;
+    			margin-left: 10px;
+		}
+
+		div.timeslot {
+			p {
+				margin-top: 0px;
+				margin-bottom: 5px;
+			}
+		}
+
+		/* portlet calendar styles */
+		table tbody tr:first-child td > *,
+		table tbody tr td > * {
+			margin-top: 0px !important;
+			padding-top: 10px !important;
+		}
+
+
+		.portletHeader {
+			background: #F3F3F3;
+			color: #000000;
+		}
+
+		table {
+			border: 2px solid #F3F3F3;
+		}
+
+		table thead {
+			background: #F3F3F3;
+		}
+
+		table thead th {
+			color: #000000;
+			font-weight: 700;
+		}
+
+		.event {
+			background-color: #F3F3F3;
+		}
+
+		.weekdays th {
+			background-color: #F3F3F3;
+		}
+
+		.portletContent > * {
+			color: #000000;
+		}
+
+		td {
+			background-color: #F3F3F3;
+			border: 2px solid #F3F3F3;
+			a {
+				color: #000000 !important;
+			}
+		}
+
+
+		table thead {
+			border-bottom: 0px;
+		}
+
+		table > thead > tr > th, table > thead > tr > td {
+			border: 0px;
+		}
+
+		.portletContent {
+			border-top: 0px;
+		}
+
+		td:hover {
+			background-color: #e8e8e8;
+		}
+
+		table td > * {
+			width: 100%;
+			height: 100%;
+			border-radius: 0px;
+			line-height: 25px;
+		}
+
+		table .cal_has_events a:hover {
+			background: #e8e8e8;
+		    text-decoration: none;
+		    box-shadow: none;
+		    color: #000000 !important;
+		}
+
+		td.today.selected {
+			background-color: #377FA6;
+		}
+
+		tr.weekdays {
+			text-transform: lowercase;
+		}
+
+		table tbody tr:last-child td > * {
+			margin-bottom: 0px;
+		}
+
+		/* Next month events */
+		td.cal_next_month,
+		td.cal_prev_month {
+			opacity: 1;
+			pointer-events: none;
+
+			span, a {
+				visibility: hidden;
+				pointer-events: none;
+			}
+		}
+
+		/* No events style */
+		td.event:not(.cal_has_events) {
+			pointer-events: none;
+			cursor: default !important;
+
+			span {
+				opacity: .2;
+				filter: Alpha(Opacity=35);
+			}
+		}
+
+		/* With events style */
+		td.event.cal_has_events {
+
+		}
+
+	
+		/* today */
+		table .today > * {
+			box-shadow: none;
+		}
+
+		/* Event is selected */
+		table td.event.selected {
+			border-color: #f3f3f3;
+    		border: 2px solid #f3f3f3;
+
+    		a {
+    			background: #377FA6;
+    			color: #ffffff !important;
+    		}
+		}
+
+	}
+
+	@media(max-width: 768px) {
+		.subtotal-th, .subtotal-col {
+			display: none !important;
+		}
+
+		h4 {
+			font-size: 0.750em !important;
+		}
+	}
+}
+
+
+body.template-checkout {
+	#slickcarousel,
+	.intro-header {
+		margin-bottom: 0px !important;
+	}
+
+	.main-block {
+		padding-top: 0px !important;
+	}
+
+	.cd-navigation-wrapper {
+		padding-top: 120px !important;
+	}
+
+	select {
+	    background-color: #f5f5f5;
+	    border: 0 !important;
+	    -webkit-box-shadow: none !important;
+	    box-shadow: none !important;
+	    font-weight: 400 !important;
+	    font-size: 1.000em !important;
+	    color: #000000 !important;
+	    vertical-align: top;
+	    height: 43px;
+	    cursor: pointer;
+	    .introCondRegular();
+
+	    option {
+	    	color: #000000;
+	    }
+	}
+
+	div.field input[type="text"]:not(#form-widgets-email),
+	div.field input[type="email"]:not(#form-widgets-email) {
+	    font-weight: 400 !important;
+	    font-size: 1.000em !important;
+	    color: #000000 !important;
+	    background-color: #f5f5f5 !important;
+	    border: 0 !important;
+	    -webkit-box-shadow: none !important;
+	    box-shadow: none !important;
+	    padding: 0.4em!important;
+    	width: 15em;
+    	height: 43px;
+    	.introCondRegular();
+	}
+
+	div.field label {
+	    font-weight: 400 !important;
+	    font-size: 1.100em !important;
+	    display: inline-block;
+	    max-width: 100%;
+	    margin-bottom: 15px;
+	    .introCondRegular();
+	}
+
+	h2 {
+		padding-top: 10px;
+		margin-top: 1em;
+	    margin-bottom: 0.5em;
+	    padding-bottom: 0.25em;
+	    border-bottom: 0.1em solid #bbb;
+	    font-weight: 700;
+	    color: #F59332;
+	    line-height: 36px;
+	    font-size: 1.350em !important;
+	    margin: 0 0;
+	    letter-spacing: 0.05em;
+	    .introHeadB();
+	}
+
+	#input-checkout-checkout_back,
+	#input-checkout-next {
+		.buttonField();
+		font-size: 1.000em !important;
+	}
+
+	#cart_summary {
+		.introCondRegular();
+		font-size: 18px;
+	}
+
+	.mode_display .field {
+		.introCondRegular();
+		font-size: 16px;
+	}
+
+	.checkout_cart_overview {
+		.cart_item h4 {
+			font-size: 1.250em !important;
+			padding-bottom: 20px !important;
+			.introHeadB();
+		}
+
+		.cart_item td.quantity-col {
+			padding-top: 37px !important;
+			padding-bottom: 12px !important;
+		}
+
+		tr.cart-header th h4 {
+			font-size: 1.250em !important;
+			.introHeadB();
+		}
+
+		.cart_item td {
+			padding-top: 35px !important;
+		}
+
+		.subtotal-col,
+		.subtotal-th {
+			padding-right: 0px !important;
+		}
+
+		.cart_sum_content {
+			font-size: 1.125em !important;
+		}
+
+		.cart_item.recurrent-event:not(.disable) {
+			td:not(.type-ticket-td) {
+				span.cart_item_title, span.cart_item_alert {
+					visibility: visible !important;
+				}
+
+				span.cart_item_alert {
+					font-size: 1.125em;
+					line-height: 25px;
+				}
+			}
+		}
+	}
+
+	#form-checkout.mode_display label {
+    	display: none;
+	}
+
+	#form-checkout #field-checkout-accept_terms_and_conditions-accept label {
+	    display: inline !important;
+	}
+
+	#form-checkout #field-checkout-accept_terms_and_conditions-accept a {
+		color: #000000 !important;
+		text-decoration: underline !important;
+		&:hover,
+		&:active,
+		&:focus {
+			color: #000000 !important;
+		}
+	}
+
+	#form-checkout #field-checkout-accept_terms_and_conditions-accept {
+		padding-bottom: 15px;
+	}
+
+	.checkbox {
+	    display: inline-block;
+	}
+
+	#input-checkout-confirm_back,
+	#input-checkout-finish {
+		.buttonField();
+		font-size: 1.000em !important;
+	}
+
+	@media(max-width: 768px) {
+		div.field {
+			width: 100% !important;
+			clear: both !important;
+			display: block;
+			input:not([type="radio"]) {
+				width: 100% !important;
+			}
+
+			select {
+				width: 100% !important;
+			}
+		}
+
+		.intro-header {
+			height: 400px !important;
+		}
+
+		.navbar-fixed-top {
+			background: transparent !important;
+			border: 0px !important;
+		}
+	}
+
+	#input-checkout-checkout_back,
+	#input-checkout-next,
+	#input-checkout-confirm_back,
+	#input-checkout-finish {
+		display: inline-block;
+		margin-right: 10px;
+		margin-top: 20px;
+		.introCondRegular() !important;
+		font-size: 1.000em !important;
+		font-weight: 400 !important;
+		letter-spacing: 0.05em !important;
+		height: auto !important;
+		padding: 12px 28px !important
+	}
+
+	#input-checkout-confirm_back,
+	#input-checkout-finish {
+		padding: 13px 28px !important;
+    	padding-bottom: 12px !important;
+	}
+}
+
+.template-etickets * {
+    font-weight: 400 !important;
+}
+
+body.template-etickets {
+
+	#slickcarousel, #logo-wrapper, #cd-nav, .cd-nav-trigger, .title-container {
+		display: none !important;
+	}
+
+	#portal-logo {
+		display: none !important;
+	}
+
+	#cart {
+		width: 100% !important;
+	    padding-left: 55px !important;
+	    padding-right: 55px !important;
+	    padding-top: 0px !important;
+	    background: transparent !important;
+	    z-index: 10000 !important;
+	}
+
+	.ticket-item:not(:first-child) #ticket-header {
+    	margin-top: 35px !important;
+	}
+
+	.ticket-item #ticket-header {
+    	padding: 20px !important;
+    	background-color: #F59332 !important;
+    	border-radius: 0px !important;
+	}
+
+	.cart_item {
+    	padding-top: 15px !important;
+    	width: 100% !important;
+    	border-bottom: 0px !important;
+	}
+
+	table {
+    	width: 100%;
+	}
+
+	.cart_item tr {
+    	height: 40px !important;
+    	color: #666666;
+    	font-size: 1.000em;
+	}
+
+	td:not(.ticket-info) {
+    	padding-right: 0px !important;
+    	line-height: 24px !important;
+    	padding: 0px !important;
+	}
+
+	td {
+		padding-left: 10px !important;
+	}
+
+	td.ticket-info {
+	    width: 55%;
+	    font-size: 9px !important;
+	    padding-top: 0px !important;
+	}
+
+	span {
+    	font-size: 16px !important;
+    	color: #666666 !important;
+    	.introHeadB() !important;
+	}
+
+	.info-div {
+    	margin-left: 12px !important;
+	}
+
+	.info-div p {
+    	letter-spacing: 0.015em !important;
+	}
+
+	.info-div p {
+    	margin: 3px !important;
+    	line-height: 10px !important;
+    	font-size: 9px !important;
+    	margin: 0px 0 !important;
+
+    	&:first-child {
+    		margin-top: 0px !important;
+    	}
+	}
+
+	#content ul {
+   	 	margin-left: 0px !important;
+        -webkit-padding-start: 15px !important;
+	}
+
+	li  {
+		display: list-item;
+	}
+
+	h3 {
+	    font-size: 16px !important;
+	    color: #F59332 !important;
+	    font-weight: 800 !important;
+	    letter-spacing: 0.06em !important;
+	    line-height: 24px;
+	    margin: 0 0;
+	}
+
+	#ticket-footer {
+	    padding-top: 25px !important;
+	    height: auto !important;
+	    padding-right: 50px !important;
+	    padding:0px !important;
+	}
+
+	#ticket-footer div {
+    	padding-left: 0px !important;
+    	padding-top: 5px !important;
+	}
+
+	h4 {
+    	color: #F59332 !important;
+    	font-weight: 800 !important;
+    	letter-spacing: 0.06em !important;
+    	line-height: 21px;
+	    font-size: 0.875em;
+	    margin: 0 0;
+	}
+
+	#ticket-footer p, #ticket-footer ul > li {
+	    font-size: 9px !important;
+	    line-height: 12px !important;
+	    letter-spacing: 0.07em !important;
+	    color: #666666 !important;
+	    margin: 1px 0 !important;
+	}
+
+	.logo-container {
+    	height: 50px !important;
+	}
+
+	.tickets-title h1 {
+	    font-family: sans-serif !important;
+	    margin-left: 3px;
+	}
+
+	h1 {
+	    font-size: 20px !important;
+	    color: #ffffff !important;
+	    line-height: 0px !important;
+	    text-transform: uppercase !important;
+	    margin-top: 120px !important;
+	    color: #ffffff !important;
+	}
+
+	.tickets-title {
+	    height: 0px !important;
+	}
+
+	.title-aux {
+	    font-family: sans-serif !important;
+	    text-transform: uppercase;
+	    margin-bottom: 0px !important;
+	    font-size: 40px;
+	    color: #ffffff !important;
+	    margin: 0 0 !important;
+	}
+
+	.intro-header {
+		display: none !important;
+	}
+
+	.ticket-barcode {
+		padding-bottom: 30px !important;
+	}
+
+	.main-container {
+		padding: 0px !important;
+	}
+
+	.ticket-item:not(:last-child) {
+		padding-bottom: 60px !important;
+	}
+
+}
+
+
+body.template-etickets footer {
+	display: none;
+}
+
+body.template-etickets img.logo {
+	width: 240px !important;
+	height: auto !important;
+}
+
+
+body.template-etickets {
+	#logos-wrapper {
+		width: 100%;
+		text-align: left;
+	}
+
+	#logos-wrapper img {
+		max-width: 100%;
+		margin: 0 auto;
+
+	}
+
+	.ticket-title {
+		font-style: italic;
+	}
+
+	.lorentz-formule {
+		font-style: italic;
+	}
+}
+
+body.template-cart {
+	@media(max-width: 768px) {
+		.navbar-fixed-top {
+			background: transparent !important;
+			border: 0px !important;
+		}
+	}
+}
+
+body.template-ogone_payment_success {
+
+	#slickcarousel {
+		background-image: url("/nl/front-page-slideshow/keller-cut-out.jpg/@@images/image/large");
+	    position: relative;
+	    height: 100%;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		background-position: center;
+	}
+
+	#slickcarousel:before {
+		padding-top: 35%;
+	}
+
+	.intro-header {
+		position: relative;
+	}
+
+	article#content {
+		padding-top: 50px;
+	}
+
+	div#website-title {
+		position: absolute;
+		top: 48%;
+		text-align: center;
+		width: 100%;
+
+		h1 {
+		    font-weight: 800 !important;
+		    font-size: 2.125em !important;
+		    line-height: 50px !important;
+		    color: #ffffff !important;
+		    letter-spacing: 0.02em;
+		    text-transform: uppercase;
+		    margin: 0 auto;
+		    display: block;
+		    .introCondRegular();
+
+		    @media (max-width: 991px) {
+				font-size: 36px !important;
+			}	
+		}
+
+		@media (max-width: 991px) {
+			margin-left: -150px;
+			margin-top: -25px;
+		}
+
+		
+	}
+
+	.brand-name {
+		display: none !important;
+	}
+
+	.title-container {
+		padding-top: 50px;
+	}	
+
+	.wrapper-result-page {
+		@media (min-width: 991px) {
+		    width: 650px;
+		    margin: 0 auto;
+		    background: #ffffff;
+		}
+	}
+
+	p {
+	    font-weight: 400;
+	    line-height: 33px;
+	    color: #333333;
+	    margin: 0 0 10.5px;
+	    font-size: 1.00em !important;
+	    letter-spacing: 0.00em !important;
+	}
+
+	a.payment_button {
+		.buttonField();
+		text-shadow: none !important;
+	}
+	#ordernumber_order_text strong {
+		color: #000000 !important;
+	}
+}
+
+
+body.template-checkout #form-checkout #field-checkout-subscribe-subscribe {
+	padding-bottom: 15px !important;
+	margin-top: 0px;
+	label {
+		display: inline !important;
+		span {
+			@media(min-width: 992px) {
+				margin-left: 22px;
+				font-style: italic;
+			}
+		}
+	}
+}
+
+body.template-checkout #tag-checkout-subscribe-heading {
+	display: none !important;
+}
+
+body.template-checkout #form-checkout #field-checkout-accept_terms_and_conditions-accept {
+	padding-bottom: 0px !important;
+}
+
+body.template-orders {
+	.intro-header {
+		height: 200px !important;
+		background-color: #ffffff !important;
+	}
+
+	#slickcarousel {
+		display: none !important;
+	}
+
+	#export-tours-form {
+		display: none !important;
+	}
+
+	#website-title {
+		display: block;
+	    clear: both;
+	    height: auto;
+	    padding-top: 100px;
+	    padding-bottom: 200px;
+	    text-align: center;
+
+	    h1 {
+	    	font-size: 3.125em !important;
+    		text-transform: uppercase;
+	    }
+	}
+}
+
+body.template-bookings {
+
+	div.date_from_filter {
+		clear: both;
+		margin-top: 15px;
+	}
+
+	div.date_to_filter {
+		margin-top: 15px;
+	}
+
+	#bookings_wrapper {
+		padding-top: 50px;
+	}
+
+}
+
+body.template-timeslots {
+	#slickcarousel {
+		display: none;
+	}
+
+
+	div.date_from_filter,
+	div#field-from_date {
+		clear: both;
+		margin-top: 15px;
+	}
+	div.date_to_filter,
+	div#field-to_date {
+		margin-top: 15px;
+	}
+
+	#bookings_wrapper {
+		padding-top: 80px;
+	}
+
+	label[for="input-group_by"] {
+		margin-right: 0.5em;
+	}
+
+
+	select[name="bdaplonebookings_length"] {
+		margin-right: 0.5em;
+		margin-left: 0.5em;
+	}
+
+	label[for="input-group_by"],
+	select#input-group_by {
+		display: none !important;
+	}
+
+	label[for="input-vendor"],
+	select#input-vendor {
+		display: none !important;
+	}
+
+}
+
+
+div.discount_coupon_wrapper {
+	display: none !important;
+}
+
+
+body.template-timeslots #bdaplonebookings_paginate a:hover {
+    color: #000 !important;
+}
+
+body:not(.template-cart) .portletCalendar {
+	display: none !important;
+}
+ 
+@media (min-width: 992px) {
+	#input-checkout-personal_data-email, #input-checkout-personal_data-phone {
+	    width: 434px !important;
+	}
+}
+
+
 
 
