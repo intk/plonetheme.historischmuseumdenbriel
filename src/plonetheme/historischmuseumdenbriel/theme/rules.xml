@@ -234,6 +234,7 @@
             </div>
         </replace>
       </rules>-->
+      
       <drop css:content="#portal-column-two"/>
 
       <replace css:theme-children="footer .container" css:content-children="#portal-footer-wrapper" />
